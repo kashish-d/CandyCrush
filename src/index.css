@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+    display: flex;
+    /* padding: 30px; */
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/candy-crush-background-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.game {
+    background: rgba(109, 127, 151, 0.5);
+    width: 90vmin;
+    height: 90vmin;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    place-items: center;
+    border-radius: 2%;
+    /* flex-wrap: wrap; */
+}
+
+.game img {
+    width: 98%;
+    height: 98%;
 }
