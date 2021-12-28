@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CandyCrush/static/css/main.ac7814dd.css",
-    "main.js": "/CandyCrush/static/js/main.c32ebe07.js",
+    "main.css": "/CandyCrush/static/css/main.7f49f81b.css",
+    "main.js": "/CandyCrush/static/js/main.ac78cf05.js",
     "static/media/purple-candy.png": "/CandyCrush/static/media/purple-candy.ae25b8a55e061a50346f.png",
     "static/media/blue-candy.png": "/CandyCrush/static/media/blue-candy.73120c156936a4206714.png",
     "static/media/red-candy.png": "/CandyCrush/static/media/red-candy.3658b37c743115db2a9a.png",
@@ -11,11 +11,11 @@
     "static/media/green-candy.png": "/CandyCrush/static/media/green-candy.599f70161bdb3cadac66.png",
     "static/media/blank.png": "/CandyCrush/static/media/blank.fbcb91799ceba75b2e3a.png",
     "index.html": "/CandyCrush/index.html",
-    "main.ac7814dd.css.map": "/CandyCrush/static/css/main.ac7814dd.css.map",
-    "main.c32ebe07.js.map": "/CandyCrush/static/js/main.c32ebe07.js.map"
+    "main.7f49f81b.css.map": "/CandyCrush/static/css/main.7f49f81b.css.map",
+    "main.ac78cf05.js.map": "/CandyCrush/static/js/main.ac78cf05.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac7814dd.css",
-    "static/js/main.c32ebe07.js"
+    "static/css/main.7f49f81b.css",
+    "static/js/main.ac78cf05.js"
   ]
 }
