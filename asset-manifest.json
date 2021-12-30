@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CandyCrush/static/css/main.dcce2dfc.css",
+    "main.css": "/CandyCrush/static/css/main.c0e8eaa6.css",
     "main.js": "/CandyCrush/static/js/main.bb4590d4.js",
     "static/media/purple-candy.png": "/CandyCrush/static/media/purple-candy.ae25b8a55e061a50346f.png",
     "static/media/blue-candy.png": "/CandyCrush/static/media/blue-candy.73120c156936a4206714.png",
@@ -21,11 +21,11 @@
     "static/media/Tiffi-sad.png": "/CandyCrush/static/media/Tiffi-sad.bed0b749ecdba1856359.png",
     "static/media/blank.png": "/CandyCrush/static/media/blank.fbcb91799ceba75b2e3a.png",
     "index.html": "/CandyCrush/index.html",
-    "main.dcce2dfc.css.map": "/CandyCrush/static/css/main.dcce2dfc.css.map",
+    "main.c0e8eaa6.css.map": "/CandyCrush/static/css/main.c0e8eaa6.css.map",
     "main.bb4590d4.js.map": "/CandyCrush/static/js/main.bb4590d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcce2dfc.css",
+    "static/css/main.c0e8eaa6.css",
     "static/js/main.bb4590d4.js"
   ]
 }
