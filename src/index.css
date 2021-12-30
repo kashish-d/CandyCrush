@@ -6,13 +6,14 @@
 
 .app {
     display: flex;
-    /* padding: 30px; */
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     background-image: url('images/candy-crush-background-2.png');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .game {
@@ -30,4 +31,242 @@
 .game img {
     width: 98%;
     height: 98%;
+}
+.score-board {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-image: linear-gradient(#ffb6c1, #ffc0cb);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+    color: #85796b;
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 2.5vmin;
+    line-height: 6vmin;
+}
+.score-board div img {
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+.score-image {
+    height: 40vmin;
+}
+.score-panel {
+    height: 25vmin;
+}
+
+button {
+    padding: 0.5rem 0.9rem;
+    background-image: linear-gradient(#ffb6c1, #ffc0cb);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 0 #fff inset;
+    color: #85796b;
+    border: none;
+    font-size: 2rem;
+    border-radius: 150px;
+}
+.backButton {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+.buttonText {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.home {
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('images/candy-crush-background-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+.home h1 {
+    font-family: 'Shizuru', cursive;
+    color: magenta;
+    font-size: 15vmin;
+}
+.home h1:nth-child(1) {
+    font-family: 'Pushster', cursive;
+}
+.homeMenuButton {
+    font-size: 2rem;
+    text-decoration: none;
+    background-image: linear-gradient(#9cd517, #51c52a);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 0 #fff inset;
+    outline: none;
+    color: #85796b;
+    color: #1008;
+    padding: 1rem 2rem;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.homeMenuButton.red {
+    background-image: linear-gradient(#ff3636, #8f1c1c);
+}
+.homeMenuButton.pink {
+    background: linear-gradient(#e73c9b, #c43b93);
+}
+.homeMenuButton span {
+    font-size: 1rem;
+}
+.homeMenuButton:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+.modal-outer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: hsla(0, 0%, 0%, 0.89);
+    min-height: 100%;
+    min-width: 100%;
+    /* pointer-events: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-outer.pink {
+    background-image: linear-gradient(
+        hsla(351, 100%, 86%, 0.6),
+        hsla(350, 100%, 88%, 0.6)
+    );
+}
+.loading-circle {
+    height: 10vmin;
+    width: 10vmin;
+    border-radius: 150px;
+    border: 1vmin solid hsla(0, 0%, 0%, 0.1);
+    border-top: 1vmin solid pink;
+    animation: rotating 1s infinite linear;
+}
+@keyframes rotating {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal-box {
+    /* height: 9rem; */
+    width: 40%;
+    background: linear-gradient(#ffb6c1, #ffc0cb);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 0 #fff inset;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #85796b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-300%);
+    animation: modalPop 0.4s ease-out forwards 0.2s;
+}
+@keyframes modalPop {
+    80% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.modal-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-info img {
+    margin-right: 3vmin;
+    height: 20vmin;
+    width: 20vmin;
+}
+.modal-box button {
+    background-image: linear-gradient(#9cd517, #51c52a);
+}
+.modal-btn-link {
+    text-decoration: none;
+    color: #85796b;
+}
+.levelPage {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/candy-crush-background-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.level-item {
+    margin: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('./images/bg.jpg');
+    background-size: contain;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 0 #fff inset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    cursor: pointer;
+    pointer-events: none;
+}
+.level-item-link {
+    pointer-events: all;
+    color: cornsilk;
+    text-decoration: none;
+}
+.home-menu {
+    height: 35vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+.home-menu h3:hover {
+    transform: scale(1.05);
+}
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 38vmin;
+    width: 100vmin;
+    /* border: 2px solid; */
+    /* flex-wrap: wrap; */
+}
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo img {
+    height: 18vmin;
+    width: 18vmin;
+}
+.logo img:nth-child(1) {
+    transform: rotateY(180deg);
 }
